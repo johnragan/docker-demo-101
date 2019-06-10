@@ -1,4 +1,7 @@
 kubectl create configmap app-config --from-file=app.properties
-create -f deployment-config-map.yml
+kubectl create -f deployment-config-map.yml
 kubectl exec basicapp-deployment-7458f4994b-f6clh -i -t -- /bin/bash
 cat /etc/config/app.properties
+
+kubectl delete configmap app-config
+kubectl delete deployment basicapp-deployment
