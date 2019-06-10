@@ -1,12 +1,15 @@
+Lab 1 - Docker
+
 docker build .
 docker image ls
 docker run -p 3000:3000 -d -t 011e536c1d31
 curl localhost:3000
 
-docker image ls
-docker ps
+docker ps -a
 docker stop e8a7a1f0d1e9
-docker ps
+docker ps -a
+docker rm e8a7a1f0d1e9
+docker ps -a
 docker image ls
 
 docker login
@@ -26,3 +29,5 @@ curl localhost:3000
 docker stop brave_golick
 docker rm brave_golick
 docker rmi jragan/docker-demo-101
+
+
