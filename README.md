@@ -12,9 +12,11 @@ Please use the Stable and not Edge version!
 
 ## Pull Down This Repo
 
-Pull down this repo by executing the folloiwng at the command line:
+Pull down this repo by executing the following at the command line:
 
 * git clone https://github.com/johnragan/docker-demo-101.git
+
+If you do not have git installed, just use the green "Clone or download" button above to download the zip.
 
 ## DockerHub for This Lab
 
