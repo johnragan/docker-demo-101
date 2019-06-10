@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodebasicapp.jragan.org
+  labels:
+      app: basicapp
+spec:
+  containers:
+  - name: docker-demo-101
+    image: jragan/docker-demo-101
+    ports:
+    - containerPort: 3000
+  nodeSelector:
+    hardware: foozy

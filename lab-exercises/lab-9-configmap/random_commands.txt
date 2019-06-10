@@ -1,0 +1,4 @@
+create -f deployment-config-map.yml
+cat /etc/config/app.properties
+kubectl exec basicapp-deployment-7458f4994b-f6clh -i -t -- /bin/bash
+kubectl create configmap app-config --from-file=app.properties

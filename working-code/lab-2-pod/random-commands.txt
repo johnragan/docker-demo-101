@@ -1,0 +1,7 @@
+kubectl get pods
+kubectl delete pod basicapp
+kubectl expose pod basicapp --type=NodePort --name basicapp
+kubectl create -f pod-basicapp.yml
+kubectl get services
+kubectl delete service basicapp
+kubectl describe pod

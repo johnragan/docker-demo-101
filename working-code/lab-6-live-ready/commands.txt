@@ -1,0 +1,9 @@
+watch -n1 kubectl get pods
+
+describe pod basicapp-deployment-64d57644b-82dgb
+kubectl create -f experiment-liveness-readiness.yml
+kubectl delete deployment basicapp-deployment
+
+kubectl exec -it basicapp-deployment-5c85487bd9-hvrjl -- /bin/bash
+cat index.js
+kubectl exec -it basicapp-deployment-5c85487bd9-hvrjl --container docker-demo-101 -- /bin/bash

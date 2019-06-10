@@ -1,0 +1,9 @@
+kubectl create -f deployment-basicapp.yml
+kubectl get pods
+kubectl get deployments
+kubectl expose pod basicapp-deployment-689979c749-7dbfs --type=NodePort --name basicapp
+kubectl get services
+curl localhost:30386
+kubectl delete service basicapp
+kubectl delete deployment basicapp-deployment
+kubectl get pods

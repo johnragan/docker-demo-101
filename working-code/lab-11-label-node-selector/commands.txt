@@ -1,0 +1,8 @@
+kubectl create -f pod-basicapp.yml
+kubectl get node
+kubectl describe node docker-for-desktop
+
+kubectl describe pod nodebasicapp.jragan.org
+kubectl get nodes --show-labels
+kubectl label nodes docker-for-desktop team=hobsons --overwrite=true
+kubectl get pods -o wide

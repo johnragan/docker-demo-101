@@ -1,0 +1,10 @@
+watch -n1 kubectl get pods
+
+kubectl create -f deployment-basicapp.yml --record
+kubectl create -f service-basicapp.yml
+kubectl set image deployment/basicapp-deployment docker-demo-101=jragan/docker-demo-101:2 --record
+kubectl get service
+kubectl rollout status deployment basicapp-deployment
+curl localhost:30368
+kubectl rollout undo deployment basicapp-deployment
+kubectl rollout undo deployment basicapp-deployment --to-revision=3

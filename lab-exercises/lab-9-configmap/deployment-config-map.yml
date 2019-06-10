@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: basicapp-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: basicapp
+    spec:
+      containers:
+      - name: docker-demo-101
+        image: jragan/docker-demo-101
+        ports:
+        - name: nodejs-port
+          containerPort: 3000
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/foobar          
+      volumes:
+      - name: config-volume
+        configMap:
+          name: name-of-the-config          

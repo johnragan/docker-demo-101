@@ -1,0 +1,23 @@
+kubectl create -f hpa-example.yml
+kubectl get hpa
+kubectl run -i --tty load-generator --image=busybox /bin/sh
+wget http://hpa-example.default.svc.cluster.local:31001
+cat index.html
+rm index.html
+while true; do wget -q -O- http://hpa-example.default.svc.cluster.local:31001; done
+kubectl delete deployment load-generator
+kubectl delete deployment hpa-example
+kubectl delete hpa hpa-example-autoscaler
+kubectl delete service hpa-example
+
+
+
+
+git clone https://github.com/kubernetes-incubator/metrics-server.git
+cd metrics-server
+kubectl apply -f deploy/1.8+/
+kubectl get apiservices |egrep metrics
+kubectl get deploy,svc |egrep metrics-server
+kubectl top node
+kubectl get --raw "/apis/metrics.k8s.io/v1beta1/nodes"
+kubectl delete -f deploy/1.8+/

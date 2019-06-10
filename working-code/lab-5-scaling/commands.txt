@@ -1,0 +1,10 @@
+kubectl create -f deployment-basicapp.yml
+kubectl edit deployment basicapp-deployment
+
+VI Help for editing in Kubernetes:
+   i              to enter edit mode
+   <ESC>          to leave edit mode
+   :wq<ENTER>     to save edits
+   :qa<ENTER>     to exit without any changes
+
+watch -n1 kubectl get pods

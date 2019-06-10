@@ -1,0 +1,10 @@
+Random Order:
+
+kubectl get deployments
+kubectl create -f service-basicapp.yml
+kubectl delete deployment basicapp-deployment
+kubectl get services
+kubectl create -f deployment-basicapp.yml
+kubectl get pods
+curl localhost:30386
+kubectl delete service basicapp

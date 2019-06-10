@@ -1,0 +1,16 @@
+{
+    "name": "myapp",
+    "version": "2.0.0",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "engines": {
+      "node": "^4.6.2"
+    },
+    "dependencies": {
+      "express": "^4.14.0"
+    },
+    "devDependencies": {
+    }
+  }
+  

@@ -1,0 +1,9 @@
+kubectl create -f deployment-basicapp.yml
+kubectl create -f service-basicapp.yml
+kubectl get pods
+kubectl get deployments
+kubectl get services
+curl localhost:30386
+kubectl delete service basicapp
+kubectl delete deployment basicapp-deployment
+kubectl get pods
