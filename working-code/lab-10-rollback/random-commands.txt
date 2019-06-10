@@ -6,3 +6,4 @@ kubectl create -f deployment-basicapp.yml --record
 kubectl rollout status deployment basicapp-deployment
 kubectl set image deployment/basicapp-deployment docker-demo-101=jragan/docker-demo-101:2 --record
 curl localhost:30368
+kubectl rollout status deployment basicapp-deployment
