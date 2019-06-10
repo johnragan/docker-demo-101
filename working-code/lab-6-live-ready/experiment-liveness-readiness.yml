@@ -15,9 +15,9 @@ spec:
         args:
         - /bin/sh
         - -c
-        #- touch /tmp/healthy; touch /tmp/ready; sleep 600
-        #- touch /tmp/healthy; sleep 60; touch /tmp/ready; sleep 60; rm -rf /tmp/ready; sleep 60; touch /tmp/ready; sleep 600
-        # - touch /tmp/healthy; touch /tmp/ready; sleep 60; rm -rf /tmp/healthy; sleep 600
+        - touch /tmp/healthy; touch /tmp/ready; sleep 600
+        #- touch /tmp/healthy; sleep 45; touch /tmp/ready; sleep 45; rm -rf /tmp/ready; sleep 45; touch /tmp/ready; sleep 600
+        # - touch /tmp/healthy; touch /tmp/ready; sleep 50; rm -rf /tmp/healthy; sleep 600
         ports:
         - name: nodejs-port
           containerPort: 3000
