@@ -11,4 +11,4 @@ spec:
     ports:
     - containerPort: 3000
   nodeSelector:
-    hardware: foozy
+    environment: prod
