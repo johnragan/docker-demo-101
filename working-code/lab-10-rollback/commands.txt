@@ -9,4 +9,8 @@ kubectl set image deployment/basicapp-deployment docker-demo-101=jragan/docker-d
 kubectl rollout history deployment basicapp-deployment
 curl localhost:30368
 kubectl rollout undo deployment basicapp-deployment
-kubectl rollout undo deployment basicapp-deployment --to-revision=3
+kubectl rollout history deployment basicapp-deployment
+kubectl rollout undo deployment basicapp-deployment --to-revision=2
+curl localhost:30368
+kubectl delete deployment basicapp-deployment
+kubectl delete service basicapp
