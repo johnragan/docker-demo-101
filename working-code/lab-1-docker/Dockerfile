@@ -1,5 +1,5 @@
 # Create this image from an existing Docker image
-FROM node:4.6.2
+FROM node:6
 
 # Build this new image with layers on top of the image used above
 WORKDIR /app

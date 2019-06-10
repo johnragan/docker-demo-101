@@ -16,6 +16,10 @@ docker login
 docker tag 011e536c1d31 jragan/docker-demo-101
 docker push jragan/docker-demo-101
 
+docker tag 4c5da551f65a jragan/docker-demo-101:2
+docker push jragan/docker-demo-101:2
+
+
 docker rmi 011e536c1d31
 docker ps -a
 docker rm 735a9d52f25b
