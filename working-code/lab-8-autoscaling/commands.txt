@@ -1,5 +1,5 @@
-kubectl create -f hpa-example.yml
-kubectl get hpa
+kubectl create -f hpa-example.yml --validate=false
+watch -n1 kubectl get hpa
 kubectl run -i --tty load-generator --image=busybox /bin/sh
 wget http://hpa-example.default.svc.cluster.local:31001
 cat index.html
@@ -11,6 +11,8 @@ kubectl delete hpa hpa-example-autoscaler
 kubectl delete service hpa-example
 
 
+kubectl apply -f deploy/1.8+/
+kubectl delete -f deploy/1.8+/
 
 
 git clone https://github.com/kubernetes-incubator/metrics-server.git

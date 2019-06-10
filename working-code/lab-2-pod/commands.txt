@@ -6,4 +6,10 @@ kubectl expose pod basicapp --type=NodePort --name basicapp
 kubectl get services
 kubectl delete service basicapp
 kubectl get pods
+
+docker ps -a
+docker stop e8a7a1f0d1e9
+docker ps -a
+docker rm e8a7a1f0d1e9
+
 kubectl delete pod basicapp
