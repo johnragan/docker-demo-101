@@ -1,3 +1,5 @@
+Lab 5 - Scaling
+
 kubectl create -f deployment-basicapp.yml
 kubectl edit deployment basicapp-deployment
 

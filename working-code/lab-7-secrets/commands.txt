@@ -1,3 +1,5 @@
+Lab 7 - Secrets
+
 echo -n 'root' | base64
 
 kubectl create -f db-secrets.yml

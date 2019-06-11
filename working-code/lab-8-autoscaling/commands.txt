@@ -1,3 +1,5 @@
+Lab 8 - Auto Scaling
+
 kubectl create -f hpa-example.yml --validate=false
 watch -n1 kubectl get hpa
 kubectl run -i --tty load-generator --image=busybox /bin/sh

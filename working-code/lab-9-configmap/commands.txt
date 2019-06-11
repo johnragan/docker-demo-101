@@ -1,3 +1,5 @@
+Lab 9 - ConfigMap
+
 kubectl create configmap app-config --from-file=app.properties
 kubectl create -f deployment-config-map.yml
 kubectl exec basicapp-deployment-7458f4994b-f6clh -i -t -- /bin/bash

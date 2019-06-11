@@ -1,3 +1,5 @@
+Lab 3 - Deployment
+
 kubectl create -f deployment-basicapp.yml
 kubectl get pods
 kubectl get deployments

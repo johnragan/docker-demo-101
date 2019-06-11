@@ -1,3 +1,5 @@
+Lab 10 - Rollback
+
 watch -n1 kubectl get pods
 
 kubectl create -f deployment-basicapp.yml --record

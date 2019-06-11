@@ -1,3 +1,5 @@
+Lab 6 - Liveness Probe and Readiness Probe
+
 watch -n1 kubectl get pods
 
 describe pod basicapp-deployment-64d57644b-82dgb

@@ -1,3 +1,5 @@
+Lab 2 - Pod 
+
 kubectl create -f pod-basicapp.yml
 kubectl get pods
 kubectl describe pod
