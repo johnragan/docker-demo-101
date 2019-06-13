@@ -1,5 +1,5 @@
 # Create this image from an existing Docker image
-FROM node:6
+FROM mhart/alpine-node:6.17.1
 
 # Build this new image with layers on top of the image used above
 WORKDIR /app
