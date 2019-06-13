@@ -18,6 +18,13 @@ Pull down this repo by executing the following at the command line:
 
 If you do not have git installed, just use the green "Clone or download" button above to download the zip.
 
+## Pull Down These Docker Images to Save Time During the Presentation
+
+Pull down these repos by executing the following at the command line:
+
+* docker pull mhart/alphine-node:4.9.1
+* docker pull mhart/alphine-node:6.17.1
+
 ## DockerHub for This Lab
 
 The DockerHub for this lab can be found here:
