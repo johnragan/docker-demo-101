@@ -1,5 +1,11 @@
 Lab 10 - Rollback
 
+1. View rollout status
+2. View rollout history
+3. Rollback a deployment
+4. Rollout to a particular version
+
+
 watch -n1 kubectl get pods
 
 kubectl create -f deployment-basicapp.yml --record
