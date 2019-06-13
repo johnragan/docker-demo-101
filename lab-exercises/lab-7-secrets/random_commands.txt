@@ -1,6 +1,0 @@
-kubectl create -f deployment-secrets-volumes.yml
-echo -n 'root' | base64
-echo $MONGO_ROOT_PASSWORD
-kubectl create -f db-secrets.yml
-cat /etc/creds/username
-kubectl exec basicapp-deployment-7458f4994b-f6clh -i -t -- /bin/bash
