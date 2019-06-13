@@ -10,3 +10,4 @@ spec:
     image: jragan/docker-demo-101
     ports:
     - containerPort: 3000
+    
