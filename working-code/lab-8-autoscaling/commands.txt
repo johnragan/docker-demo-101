@@ -1,5 +1,10 @@
 Lab 8 - Auto Scaling
 
+1. Configure auto scaling based on CPU metrics
+2. Increase CPU load to increase more Pods auto-created
+3. Decrease CPU load to decrease Pods auto-created
+
+
 kubectl create -f hpa-example.yml --validate=false
 watch -n1 kubectl get hpa
 kubectl run -i --tty load-generator --image=busybox /bin/sh

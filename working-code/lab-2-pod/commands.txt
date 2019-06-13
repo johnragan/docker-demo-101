@@ -1,5 +1,11 @@
 Lab 2 - Pod 
 
+1. Create basic Pod definition
+2. Use kubectl to create the pod on cluster
+3. Expose it
+4. Access it (use the exposed port!)
+5. Delete the service and pod to shut down
+
 kubectl create -f pod-basicapp.yml
 kubectl get pods
 kubectl describe pod

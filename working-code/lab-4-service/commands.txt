@@ -1,5 +1,11 @@
 Lab 4 - Service
 
+1. Create a Service definition
+2. Use kubectl to create the deployment and service on cluster
+3. Access it
+4. Delete the service and deployment to shut down
+
+
 kubectl create -f deployment-basicapp.yml
 kubectl create -f service-basicapp.yml
 kubectl get pods

@@ -1,5 +1,12 @@
 Lab 7 - Secrets
 
+1. Create a secret from db-secrets file
+2. Create and run a deployment using those secrets
+3. Read the secrets from /etc/creds
+4. Read the secret from the environment variables
+5. Display the contents of the secrets as volumes
+
+
 echo -n 'root' | base64
 
 kubectl create -f db-secrets.yml

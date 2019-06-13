@@ -1,5 +1,10 @@
 Lab 11 - Labels and NodeSelector
 
+1. Launch Pod to only be able to run on a Node where Env:Production
+2. Demonstrate its failure to launch
+3. Make the necessary changes to allow it to run
+
+
 kubectl label node docker-for-desktop environment-
 kubectl label nodes docker-for-desktop environment=qa --overwrite=true
 kubectl get node

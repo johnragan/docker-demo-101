@@ -1,5 +1,13 @@
 Lab 1 - Docker
 
+1. Create Docker account 
+2. Go into the downloaded lab’s working-code/lab-1-docker directory
+3. Build Image from Dockerfile
+4. Run the Image
+5. Upload the image
+6. Change it to use Node version 6.17.1 and say “Hello DC DevFest” (index.js file)
+7. Upload Image to your DockerHub as version 2
+
 docker build .
 docker image ls
 docker run -p 3000:3000 -d -t 011e536c1d31
@@ -18,7 +26,6 @@ docker push jragan/docker-demo-101
 
 docker tag 4c5da551f65a jragan/docker-demo-101:2
 docker push jragan/docker-demo-101:2
-
 
 docker rmi 011e536c1d31
 docker ps -a

@@ -1,5 +1,10 @@
 Lab 9 - ConfigMap
 
+1. Create the deployment file to configure the volumeMount ‘config-volume’ to mount to /etc/config
+2. Update the deployment file to configure the volume ‘config-volume’
+3.Display the contents of app.properties in one of the Pods
+
+
 kubectl create configmap app-config --from-file=app.properties
 kubectl create -f deployment-config-map.yml
 kubectl exec basicapp-deployment-7458f4994b-f6clh -i -t -- /bin/bash

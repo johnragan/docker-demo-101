@@ -1,5 +1,12 @@
 Lab 3 - Deployment
 
+1. Create a Deployment definition
+2. Use kubectl to create the deployment on cluster
+3. Expose it
+4. Access it (use the exposed port!)
+5. Delete the service and deployment to shut down
+
+
 kubectl create -f deployment-basicapp.yml
 kubectl get pods
 kubectl get deployments
