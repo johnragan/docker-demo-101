@@ -4,7 +4,6 @@ metadata:
   name: basicapp-deployment
 spec:
   replicas: 3
-  revisionHistoryLimit: 20
   selector:
     matchLabels:
       app: basicapp
