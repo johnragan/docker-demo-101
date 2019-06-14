@@ -22,8 +22,8 @@ If you do not have git installed, just use the green "Clone or download" button 
 
 Pull down these repos by executing the following at the command line:
 
-* docker pull mhart/alphine-node:4.9.1
-* docker pull mhart/alphine-node:6.17.1
+* docker pull mhart/alpine-node:4.9.1
+* docker pull mhart/alpine-node:6.17.1
 
 ## DockerHub for This Lab
 
